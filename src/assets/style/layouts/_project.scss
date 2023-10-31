@@ -21,9 +21,11 @@
         background-color: $color2;
         @media screen and (max-width:360px) {
             height: 75px;
+            width: 100vw;
         }
         @media screen and (max-width:900px) {
-                 height: 100px;   
+                 height: 100px;
+                 width: 100vw;   
         }
         .annee, .projets-nombre {
             display: flex;

@@ -736,11 +736,13 @@ header .header-container i:hover {
 @media screen and (max-width: 360px) {
   .projets .projets-chiffres {
     height: 75px;
+    width: 100vw;
   }
 }
 @media screen and (max-width: 900px) {
   .projets .projets-chiffres {
     height: 100px;
+    width: 100vw;
   }
 }
 .projets .projets-chiffres .annee, .projets .projets-chiffres .projets-nombre {
@@ -1007,6 +1009,16 @@ header .header-container i:hover {
   min-height: 100vh;
   -webkit-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.07);
           box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.07);
+}
+@media screen and (max-width: 900px) {
+  .contact {
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 360px) {
+  .contact {
+    width: 100vw;
+  }
 }
 .contact .contact-container {
   display: -webkit-box;
