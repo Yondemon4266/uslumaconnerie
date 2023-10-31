@@ -23,7 +23,9 @@ html {
 }
 body {
     width: $fullwidth;
-    
+    @media screen and (max-width:900px) {
+      width: 100vw;
+    }
 }
 * {
     margin: 0;
