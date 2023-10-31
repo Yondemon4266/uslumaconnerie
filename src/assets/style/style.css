@@ -114,11 +114,13 @@ a {
 @media screen and (max-width: 360px) {
   .navigation {
     height: 50px;
+    width: 100vw;
   }
 }
 @media screen and (max-width: 900px) {
   .navigation {
     height: 75px;
+    width: 100vw;
   }
 }
 .navigation .logo {
