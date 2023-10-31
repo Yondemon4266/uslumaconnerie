@@ -7,6 +7,9 @@
     @media screen and (max-width:360px) {
         gap:16px;
     }
+    @media screen and (max-width:900px) {
+           gap: 24px;         
+    }
     .projets-chiffres {
         display: flex;
         width: $fullwidth;
@@ -16,6 +19,9 @@
         background-color: $color2;
         @media screen and (max-width:360px) {
             height: 75px;
+        }
+        @media screen and (max-width:900px) {
+                 height: 100px;   
         }
         .annee, .projets-nombre {
             display: flex;
@@ -29,12 +35,18 @@
                 @media screen and (max-width:360px) {
                     font:$title-h2-mobile;
                 }
+                @media screen and (max-width:900px) {
+                    font: $title-h2-mobile;
+                  }
             }
             h4 {
                 font: $title-h4;
                 font-weight: 500;
                 @media screen and (max-width:360px) {
                     font: 16px "Roboto", sans-serif;
+                }
+                @media screen and (max-width:900px) {
+                    font: 18px "Roboto", sans-serif;
                 }
             }
         }
@@ -56,6 +68,9 @@
         @media screen and (max-width:360px) {
             gap: 16px;
         }
+        @media screen and (max-width:900px) {
+            gap: 20px;
+        }
         .projet {
             width: 420px;
             height: 380px;
@@ -63,6 +78,10 @@
             @media screen and (max-width:360px) {
                 width: 300px;
                 height: 250px;
+            }
+            @media screen and (max-width:900px) {
+                width: 380px;
+                height: 300px;
             }
             img {
                 overflow: hidden;
@@ -108,13 +127,15 @@
         }
         .voir-plus {
             position: absolute;
-            bottom: 20px;
+            bottom: 40px;
             left: 50%;
             transform: translate(-50%, 50%);
             transition: 0.4s ease;
             @media screen and (max-width:360px) {
-                top: -20px;
-                bottom: auto;
+                bottom: 20px;
+            }
+            @media screen and (max-width:900px) {
+                bottom: 40px;
             }
             &:hover {
                 transform: translate(-50%, 50%) scale(1.1);
@@ -130,6 +151,10 @@
                 @media screen and (max-width:360px) {
                     padding: 7px 12px;
                     font: 14px "Roboto", sans-serif;
+                }
+                @media screen and (max-width:900px) {
+                    padding: 10px;
+                    font: 16px "Roboto",
                 }
             }
         }
@@ -149,6 +174,10 @@
                 font: 14px "Roboto", sans-serif;
                 margin-bottom: 0;
             }
+            @media screen and (max-width:900px) {
+                    padding: 10px;
+                    font: 16px "Roboto", sans-serif;
+            }
             &:hover {
                 transform: translate(-50%, 50%) scale(1.1);
             }
@@ -159,7 +188,10 @@
             left: 50%;
             transform: translate(-50%, 50%);
             @media screen and (max-width:360px) {
-                top: -20px;
+                top: -100px;
+            }
+            @media screen and (max-width:900px) {
+                  top: -50px;  
             }
         }
         .buttonless2 {
@@ -169,6 +201,9 @@
             transform: translate(-50%, 50%);
             @media screen and (max-width:360px) {
                 bottom: 40px;
+            }
+            @media screen and (max-width:900px) {
+                    bottom: 40pxpx;
             }
         }
     }

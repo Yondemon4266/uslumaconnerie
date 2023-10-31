@@ -15,7 +15,9 @@
   transition: 0.4s ease;
   @media screen and (max-width: 360px) {
     height: 50px;
-    width: 100vw;
+  }
+  @media screen and (max-width:900px) {
+    height: 75px;
   }
   .logo {
     background-color: $color2;
@@ -33,6 +35,15 @@
       width: 280px;
       height: 100%;
     }
+    @media screen and (max-width:900px) {
+      width: 70%;
+      height: 90%;
+    }
+    @media screen and (max-width:560px) {
+      width: 85%;
+      height: 95%;
+    }
+    
     .ulnav {
       width: 100%;
       height: 100%;
@@ -42,7 +53,13 @@
       align-items: center;
       margin: 0 45px;
       @media screen and (max-width: 360px) {
+        margin: 0 4px;
+      }
+      @media screen and (max-width:900px) {
         margin: 0 10px;
+      }
+      @media screen and (max-width:560px) {
+        margin: 0 5px;
       }
       a {
         transition: 0.4s ease;
@@ -60,6 +77,14 @@
               padding: 3px;
               font: $navigation-font-mobile;
             }
+            @media screen and (max-width:900px) {
+              padding: 5px;
+              font: 16px "Roboto", sans-serif;
+            }
+            @media screen and (max-width:560px) {
+              padding: 4px;
+              font: 12px "Roboto", sans-serif;
+            }
           }
         }
         li {
@@ -70,6 +95,14 @@
           @media screen and (max-width: 360px) {
             padding: 3px;
             font: $navigation-font-mobile;
+          }
+          @media screen and (max-width:900px) {
+            padding: 5px;
+            font: 16px "Roboto", sans-serif;
+          }
+          @media screen and (max-width:560px) {
+            padding: 4px;
+            font: 12px "Roboto", sans-serif;
           }
         }
       }

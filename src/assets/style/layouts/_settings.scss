@@ -23,7 +23,7 @@ html {
 }
 body {
     width: $fullwidth;
-    overflow-x: hidden;
+    
 }
 * {
     margin: 0;
@@ -51,6 +51,9 @@ a {
     @media screen and (max-width:360px) {
         height: 80px;
     }
+    @media screen and (max-width:900px) {
+        height: 100px;      
+    }
     h2 {
       font: $title-h2;
       width: 300px;
@@ -64,6 +67,12 @@ a {
         width: fit-content;
         border-bottom: inset 3px $color2;
         height: 50px;
+      }
+      @media screen and (max-width:900px) {
+          height: 75px;
+          width: fit-content;
+          font: $title-h2-mobile;
+          border-bottom: inset 3px $color2;   
       }
     }
   }
