@@ -1,0 +1,69 @@
+$color1:   #876648;
+$color2: #EDCD1F;
+$navigation-height: 100px;
+$fullwidth: calc(100vw - 17px);
+$navigation-font: 20px "Roboto", sans-serif;
+$paragraphe: 18px "Roboto", sans-serif;
+$title-h2: 40px "Roboto", sans-serif;
+$title-h4: 32px "Roboto", sans-serif;
+$grey: #F9F9F9;
+$navigation-font-mobile: 12px "Roboto", sans-serif;
+$navigation-height-mobile: 50px;
+$title-h2-mobile: 26px "Roboto", sans-serif;
+$title-h4-mobile: 20px "Roboto", sans-serif;
+$paragraphe-mobile: 16px "Roboto", sans-serif;
+
+@font-face {
+    font-family: "Rokkitt";
+    src: url("../../../public/fonts/Rokkitt/Rokkitt-VariableFont_wght.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+    width: $fullwidth;
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+  color: black;  
+}
+
+
+.custom-tooltip {
+    width: 52px;
+    text-align: center;
+}
+
+.titre-top {
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width:360px) {
+        height: 80px;
+    }
+    h2 {
+      font: $title-h2;
+      width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: inset 8px $color2;
+      padding: 15px;
+      @media screen and (max-width:360px) {
+        font: $title-h2-mobile;
+        width: fit-content;
+        border-bottom: inset 3px $color2;
+        height: 50px;
+      }
+    }
+  }

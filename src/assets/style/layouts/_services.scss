@@ -1,0 +1,70 @@
+.services {
+    min-height: 100vh;
+    width: $fullwidth;
+    .services-content {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        @media screen and (max-width:360px) {
+            margin-top: 10px;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .service {
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            align-items: center;
+            @media screen and (max-width:360px) {
+                border-radius: 5px;
+            }
+            img {
+                width: 330px;
+                height: 300px;
+                border-radius: 10px;
+                @media screen and (max-width:360px) {
+                    width: 280px;
+                    height: 200px;
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                    border-top-right-radius: 5px;
+                    border-top-left-radius: 5px;
+                }
+            }
+            .service-content {
+                width: 330px;
+                height: 300px;
+                background-color: $grey;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+                padding: 12px;
+                border-radius: 10px;
+                @media screen and (max-width:360px) {
+                    width: 280px;
+                    height: fit-content;
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    gap: 12px;
+                }
+                h3 {
+                    font: $navigation-font;
+                    font-weight: 600;
+                    @media screen and (max-width:360px) {
+                        font: $title-h4-mobile;
+                        font-weight: 700;
+                    }
+                }
+                p {
+                    font: $paragraphe;
+                    @media screen and (max-width:360px) {
+                        font: $paragraphe-mobile;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

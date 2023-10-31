@@ -1,0 +1,82 @@
+header {
+  position: relative;
+  min-height: 100vh;
+  width: $fullwidth;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  animation: apparition 0.6s 0.7s ease-out forwards;
+  transition: 1s ease-in-out;
+  background: linear-gradient(180deg, rgba(0,0,0,0.09) 100%, rgba(255,255,255,0.025) 10%), 
+  url("../../../public/img/photos/IMG-20230919-WA0000.jpg") center/cover;
+  .header-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    h1 {
+      color: #ffffff;
+      font-size: 42px;
+      font-family: "Rokkitt";
+      font-weight: 500;
+      transform: translateY(-30px);
+      opacity: 0;
+      animation: apparition2 0.6s 0.7s ease-out forwards;
+      @media screen and (max-width:360px) {
+        font-size: 26px;
+      }
+    }
+    i {
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      bottom: calc(50% - 125px);
+      left: 50%;
+      transform: translate(-50%, 50%);
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      color: #ffffff;
+      font-size: 34px;
+      margin-bottom: 5px;
+      transition: 0.4s ease;
+      cursor: pointer;
+      @media screen and (max-width:360px) {
+        bottom: calc(50% - 110px);
+      }
+      &:hover {
+        transform: translate(-50%, 50%) scale(1.2);
+        @media screen and (max-width:360px) {
+          transform: translate(-50%,50%) scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+@keyframes apparition {
+  100% {
+    opacity: 1;
+    margin-top: $navigation-height;
+    height: calc(100vh - $navigation-height);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  @keyframes apparition {
+    100% {
+      opacity: 1;
+      margin-top: $navigation-height-mobile;
+      height: calc(100vh - $navigation-height-mobile);
+    }
+  }
+}
+
+@keyframes apparition2 {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}

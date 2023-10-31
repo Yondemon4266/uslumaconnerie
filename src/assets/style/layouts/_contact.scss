@@ -1,0 +1,224 @@
+.contact {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.07);
+  .contact-container {
+    display: flex; 
+    width: $fullwidth;
+    @media screen and (max-width: 360px) {
+      flex-direction: column;
+    }
+    .contact-left {
+      text-align: center;
+      position: relative;
+      padding:  0;
+      width: 50%;
+      @media screen and (max-width:360px) {
+        width: 100%;
+    }
+      .nous-ecrire {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        h4 {
+          font: 26px "Roboto", sans-serif;
+          @media screen and (max-width:360px) {
+            font: $title-h4-mobile;
+        }
+        }
+        p {
+          font: $paragraphe;
+          max-width: calc(100% - 100px);
+          text-align: justify;
+          padding: 0 30px;
+          line-height: 28px;
+          @media screen and (max-width:360px) {
+            line-height: 24px;
+            padding: 0 15px;
+            max-width: calc(100% - 30px);
+            font: $paragraphe-mobile;
+          }  
+        }
+      }
+      .form-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px 224px;
+        grid-template-areas:
+          "input1 input2"
+          "texta texta";
+        gap: 10px;
+        width: 85%;
+        max-width: 600px;
+        margin: 30px auto;
+        @media screen and (max-width:360px) {
+          justify-content: center;
+          grid-template-columns: 40% 40%;
+          grid-template-rows: 60px 160px;
+          margin: 15px auto;
+      }
+        .textarea {
+          grid-area: texta;
+        }
+        label {
+          font-weight: 600;
+          letter-spacing: 1px;
+          font: $navigation-font;
+          @media screen and (max-width:360px) {
+            font: $navigation-font-mobile;
+          }
+        }
+        input[type="text"],
+        textarea, input[type="email"] {
+          width: 100%;
+          margin: 20px 0 40px;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+          padding: 10px;
+          transition: 0.2s;
+          @media screen and (max-width:360px) {
+            padding: 6px;
+            margin: 10px 0 20px;
+        }
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          outline: none;
+        }
+        input[type="text"]:focus,
+        textarea:focus, input[type="email"]:focus {
+          border: 2px solid $color2;
+          @media screen and (max-width:360px) {
+            border: 1px solid $color2;
+        }
+        }
+        textarea {
+          resize: none;
+          height: 180px;
+          @media screen and (max-width:360px) {
+            height: 120px;
+        }
+        }
+      }
+    }
+    .contact-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      @media screen and (max-width:360px) {
+        width: 100%;
+    }
+      .maps {
+        width: 80%;
+        height: 300px;
+        background: center/cover;
+        @media screen and (max-width:360px) {
+          width: 90%;
+          height: 230px;
+      }
+      }
+      .contact-right-container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 50px;
+        @media screen and (max-width:360px) {
+          width: 60%;
+          gap: 16px;
+      }
+        h3 {
+          margin-top: 40px;
+          text-align: center; 
+          font: 26px "Roboto", sans-serif; 
+          font-weight: 600; 
+          @media screen and (max-width:360px) {
+            font: $title-h4-mobile;
+            font-weight: 700;
+            margin-top: 20px;
+          }
+        }
+        img {
+          width: 48px;
+          height: 48px;
+          @media screen and (max-width:360px) {
+            width: 32px;
+            height: 32px;
+          }
+        }
+        .phonemail {
+          display: flex;
+          gap: 15px;
+          font-family: "Roboto";
+          font-size: 18px;
+          font-weight: 100;
+          @media screen and (max-width:360px) {
+            font-size: 16px;
+            font-weight: 200;
+            align-items: center;
+          }
+          .phonemail-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+  .h3 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .button {
+    border: 1px solid #ccc;
+    background-color: $color1;
+    color: white;
+    border-radius: 50px;
+    padding: 13px 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    @media screen and (max-width:360px) {
+      margin-bottom: 20px;
+      padding: 8px 18px;
+  }
+  }
+  .button:hover,
+  a:hover {
+    border: 1px solid $color2;
+    color: rgb(232, 228, 175);
+  }
+}
+
+.form-content {
+  position: relative;
+  .success, .fail {
+    position: absolute;
+    left: calc(50%);
+    bottom: -30px;
+    transform: translate(-50%, 50%);
+    font: $navigation-font;
+    transition: 0.5s;
+  }
+  .fail {
+    color: red;
+  }
+  .success {
+    color: green;
+  }
+  
+}
