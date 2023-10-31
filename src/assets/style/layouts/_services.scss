@@ -1,6 +1,12 @@
 .services {
     min-height: 100vh;
     width: $fullwidth;
+    @media screen and (max-width:900px) {
+        width: 100vw;
+    }
+    @media screen and (max-width:360px) {
+        width: 100vw;
+      }
     .services-content {
         display: flex;
         justify-content: center;

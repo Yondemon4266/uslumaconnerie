@@ -6,11 +6,13 @@
   @media screen and (max-width:360px) {
     flex-direction: column;
     gap: 0px;
+    width: 100vw;
 }
   @media screen and (max-width:900px) {
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    width: 100vw;
   } 
   .titre {
     width: 50%;

@@ -9,6 +9,12 @@ header {
   transition: 1s ease-in-out;
   background: linear-gradient(180deg, rgba(0,0,0,0.09) 100%, rgba(255,255,255,0.025) 10%), 
   url("../../../public/img/photos/IMG-20230919-WA0000.jpg") center/cover;
+  @media screen and (max-width:900px) {
+    width: 100vw;
+  }
+  @media screen and (max-width:360px) {
+    width: 100vw;
+  }
   .header-container {
     position: relative;
     display: flex;

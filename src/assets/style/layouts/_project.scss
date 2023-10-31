@@ -6,9 +6,11 @@
     width: $fullwidth;
     @media screen and (max-width:360px) {
         gap:16px;
+        width: 100vw;
     }
     @media screen and (max-width:900px) {
-           gap: 24px;         
+           gap: 24px;
+           width: 100vw;     
     }
     .projets-chiffres {
         display: flex;

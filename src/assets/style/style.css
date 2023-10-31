@@ -9,11 +9,6 @@ html {
 body {
   width: calc(100vw - 17px);
 }
-@media screen and (max-width: 900px) {
-  body {
-    width: 100vw;
-  }
-}
 
 * {
   margin: 0;
@@ -289,6 +284,16 @@ header {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(0, 0, 0, 0.09)), color-stop(10%, rgba(255, 255, 255, 0.025))), url("../../../public/img/photos/IMG-20230919-WA0000.jpg") center/cover;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.09) 100%, rgba(255, 255, 255, 0.025) 10%), url("../../../public/img/photos/IMG-20230919-WA0000.jpg") center/cover;
 }
+@media screen and (max-width: 900px) {
+  header {
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 360px) {
+  header {
+    width: 100vw;
+  }
+}
 header .header-container {
   position: relative;
   display: -webkit-box;
@@ -462,6 +467,16 @@ header .header-container i:hover {
   min-height: 100vh;
   width: calc(100vw - 17px);
 }
+@media screen and (max-width: 900px) {
+  .services {
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 360px) {
+  .services {
+    width: 100vw;
+  }
+}
 .services .services-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -580,6 +595,7 @@ header .header-container i:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 0px;
+    width: 100vw;
   }
 }
 @media screen and (max-width: 900px) {
@@ -592,6 +608,7 @@ header .header-container i:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100vw;
   }
 }
 .a-propos .titre {
@@ -691,11 +708,13 @@ header .header-container i:hover {
 @media screen and (max-width: 360px) {
   .projets {
     gap: 16px;
+    width: 100vw;
   }
 }
 @media screen and (max-width: 900px) {
   .projets {
     gap: 24px;
+    width: 100vw;
   }
 }
 .projets .projets-chiffres {
@@ -1002,6 +1021,12 @@ header .header-container i:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 360px) {
+  .contact .contact-container {
+    width: 100vw;
   }
 }
 .contact .contact-container .contact-left {
